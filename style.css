@@ -12,6 +12,9 @@ html{
     font-size: 1.4rem;
     font-weight: 700;
 }
+.navbar-brand img{
+    width: 150px;
+}
 #navbarSupportedContent > ul > li:nth-child(n) > a{
     color: #fff;
     border: 1px solid #fff;
