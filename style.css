@@ -1,0 +1,99 @@
+html{
+    scroll-behavior: smooth;
+}
+.text-hightlight-1{
+    color: #C60D5C;
+}
+.navbar{
+    padding: 1rem 8rem;
+    z-index: 1000;
+}
+.navbar .navbar-brand{
+    font-size: 1.4rem;
+    font-weight: 700;
+}
+#navbarSupportedContent > ul > li:nth-child(n) > a{
+    color: #fff;
+    border: 1px solid #fff;
+    margin-right: 15px;
+    font-size: 1.1rem;
+    padding: 0 0.8rem;
+}
+#navbarSupportedContent > ul > li:nth-child(n) > a:hover,
+#navbarSupportedContent > ul > li:nth-child(n) > a.active,
+#navbarSupportedContent > ul > li:nth-child(n) > a:focus,
+#navbarSupportedContent > ul > li:nth-child(n) > a:checked{
+    color: #008f85;
+}
+#navbarSupportedContent > button{
+    background: #C60D5C;
+    color: #fff;
+    font-weight: 600;
+    padding: 0.4rem 1.4rem;
+    border-radius: 30px;
+    border: none;
+}
+.mid{
+    height: 100vh;
+    width: 100%;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-content: center;
+    text-align: center;
+}
+.mid img{
+    height: 100%;
+    width: 100%;
+    overflow: hidden;
+    pointer-events: none;
+    object-fit: cover;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.detail{
+    position: relative;
+}
+.detail h2{
+    color: white;
+    font-size: 60px;
+}
+.detail p{
+    width: 55%;
+    font-size: 1.1rem;
+    padding-bottom: 1rem;
+    color: white;
+}
+.detail a{
+    background: #C60D5C;
+    font-weight: bold;
+    padding: 10px 20px;
+    border-radius: 30px;
+    text-decoration: none;
+}
+.mid .detail a:hover{
+    border: 1px solid white;
+}
+.img-size{
+    margin-top: 10px;
+}
+
+
+ /* second section */
+ .back{
+     background: lightblue;
+ }
+ .back-part{
+    padding: 75px 0;
+ }
+ .back-img img{
+    width: 100%;
+ }
+ .back-detail{
+     background: white;
+     padding: 90px 61px;
+}
+
