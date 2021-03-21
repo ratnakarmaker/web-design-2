@@ -14,14 +14,15 @@
         integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
     <!-- CSS -->
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="responsive.css">
 
-    <title>Document</title>
+    <title>foodPanda</title>
 </head>
 
 <body>
     <!-- navbar -->
     <header>
-        <nav class="navbar navbar-expand-lg fixed-top">
+        <nav class="navbar navbar-expand-lg">
             <div class="container-fluid">
                 <a class="navbar-brand" href="#">food<span class="text-hightlight-1">Panda</span></a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
@@ -42,7 +43,7 @@
                         </li>
                     </ul>
                     <button class="btn" type="submit">Log In</button>
-                    
+
                     <!-- <div class="collapse" id="navbarToggleExternalContent">
                         <div class="bg-dark p-4">
                           <h5 class="text-white h4">Collapsed content</h5>
@@ -66,8 +67,8 @@
 
             <div class="detail text-center">
                 <h2 class="fw-bold">ORDER YOUR DESIRE FOOD</h2>
-                <p class="display-4 mx-auto">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates,
-                    recusandae</p>
+                <p class="display-4 mx-auto">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Voluptates,recusandae</p>
                 <a class="text-light" href="#">See More <i class="fas fa-arrow-right"></i></a>
             </div>
         </div>
@@ -82,7 +83,7 @@
                     <div class="back-img col-lg-6 col-md-6 col-sm-12">
                         <img src="images/pasta.jpg" alt="">
                     </div>
-                    <div class="back-detail text-center col-lg-6 col-md-6 col-sm-12">
+                    <div class="back-detail col-lg-6 col-md-6 col-sm-12">
                         <h2>Your Favourite Pasta</h2>
                         <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Delectus minus quibusdam dicta id
                             provident quos non accusantium illo quasi voluptatibus!</p>
@@ -94,7 +95,7 @@
             </div>
             <div class="row">
                 <div class="back-part d-flex justify-content-center">
-                    <div class="back-detail text-center col-lg-6 col-md-6 col-sm-12">
+                    <div class="back-detail col-lg-6 col-md-6 col-sm-12">
                         <h2>Your Favourite Pasta</h2>
                         <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Delectus minus quibusdam dicta id
                             provident quos non accusantium illo quasi voluptatibus!</p>
@@ -109,6 +110,133 @@
             </div>
         </div>
     </div>
+
+
+    <!-- third section -->
+    <div class="section">
+        <div class="container">
+            <div class="row">
+                <div class="third">
+                    <div class="third-detail text-center">
+                        <h2>Choose Your Favourite Meal</h2>
+                        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Assumenda, doloremque.</p>
+                    </div>
+                    <div class="third-img">
+                        <div class="responsive">
+                            <div class="gallery">
+                                <a target="_blank" href="images/hamburger-1281855_640.jpg">
+                                    <img src="images/hamburger-1281855_640.jpg" alt="Cinque Terre" width="600"
+                                        height="400">
+                                </a>
+                            </div>
+                        </div>
+                        <div class="responsive">
+                            <div class="gallery">
+                                <a target="_blank" href="images/espresso-1209522_640.jpg">
+                                    <img src="images/espresso-1209522_640.jpg" alt="Forest" width="600" height="400">
+                                </a>
+                            </div>
+                        </div>
+                        <div class="responsive">
+                            <div class="gallery">
+                                <a target="_blank" href="images/biriyani.jpg">
+                                    <img src="images/biriyani.jpg" alt="Forest" width="600" height="400">
+                                </a>
+                            </div>
+                        </div>
+                        <div class="responsive">
+                            <div class="gallery">
+                                <a target="_blank" href="images/mexican-1935154_640.jpg">
+                                    <img src="images/mexican-1935154_640.jpg" alt="Forest" width="600" height="400">
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="third-btn d-grid gap-2 col-6 mx-auto">
+                        <button type="button" class="btn btn-outline-danger">Danger</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- footer section -->
+    <footer class="footer-bg">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="footer-text text-center">
+                    <h2 class="fw-bold">PUT US IN YOUR POCKET</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Totam consequuntur nam modi?
+                        Obcaecati, iusto nesciunt.</p>
+                    <button type="button" class="footer-btn">ORDER</button>
+                </div>
+            </div>
+            <div class="row">
+                <div class="footer-back">
+                    <div class="footer-text text-center">
+                        <h2 class="fw-bold">GET IN TOUCH</h2>
+                        <p>Lorem ipsum dolor sit amet consectetur</p>
+                    </div>
+                    <div class="row">
+                        <div class="col">
+                            <input type="text" class="form-control" placeholder="Name" aria-label="First name">
+                        </div>
+                        <div class="col">
+                            <input type="email" class="form-control" placeholder="Email" aria-label="Last name">
+                        </div>
+                    </div>
+                    <div class="col textarea">
+                        <div class="form-outline">
+                            <textarea class="form-control form-dm" id="textAreaExample" rows="4"></textarea>
+                            <label class="form-label" for="textAreaExample"></label>
+                        </div>
+                    </div>
+                    <div class="footer-btn2 d-flex justify-content-center">
+                        <button type="button" class="footer-btn">ORDER</button>
+                        <button type="button" class="footer-btn">ORDER</button>
+                    </div>
+                    <div class="icons">
+                        <!-- Social buttons -->
+                        <<ul class="list-unstyled list-inline text-center">
+                            <li class="list-inline-item">
+                                <a class="btn-floating btn-fb mx-1">
+                                    <i class="fab fa-facebook-f"> </i>
+                                </a>
+                            </li>
+                            <li class="list-inline-item">
+                                <a class="btn-floating btn-tw mx-1">
+                                    <i class="fab fa-twitter"> </i>
+                                </a>
+                            </li>
+                            <li class="list-inline-item">
+                                <a class="btn-floating btn-gplus mx-1">
+                                    <i class="fab fa-google-plus-g"> </i>
+                                </a>
+                            </li>
+                            <li class="list-inline-item">
+                                <a class="btn-floating btn-li mx-1">
+                                    <i class="fab fa-linkedin-in"> </i>
+                                </a>
+                            </li>
+                            <li class="list-inline-item">
+                                <a class="btn-floating btn-dribbble mx-1">
+                                    <i class="fab fa-dribbble"> </i>
+                                </a>
+                            </li>
+                            </ul>
+                    </div>
+                </div>
+
+            </div>
+            <div class="row">
+
+            </div>
+        </div>
+
+    </footer>
+
+
 
 
 

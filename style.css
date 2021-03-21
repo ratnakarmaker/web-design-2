@@ -82,7 +82,7 @@ html{
 }
 
 
- /* second section */
+ /* ------------second section-------------- */
  .back{
      background: lightblue;
  }
@@ -94,6 +94,83 @@ html{
  }
  .back-detail{
      background: white;
-     padding: 90px 61px;
+     padding: 14px 30px;
 }
 
+/* ---------third section------------ */
+.third{
+    padding: 75px;
+}
+div.gallery {
+    border: 1px solid #ccc;
+  }
+  
+  div.gallery:hover {
+    border: 1px solid #777;
+  }
+  
+  div.gallery img {
+    width: 100%;
+    height: auto;
+  }
+  
+  * {
+    box-sizing: border-box;
+  }
+  .responsive {
+    padding: 0 6px;
+    float: left;
+    width: 24.99999%;
+  }
+  .third-btn{
+      padding-top: 50px;
+  }
+
+  /* ----------footer ---------*/
+  .footer-bg{
+      background-image: linear-gradient(#D70F64, #C60D5C);
+      overflow: hidden;
+      height: 900px;
+  }
+  .footer-text{
+      color: white;
+      margin-top: 55px;
+  }
+  .footer-btn{
+      border: 2px solid white;
+      padding: 5px 15px;
+      color: white;
+      background: none;
+      border-radius: 10px;
+      margin-top: 25px;
+      margin-right: 10px;
+  }
+
+  /* ------footer form------- */
+  .footer-back{
+      background: black;
+      margin-top: 30px;
+      padding: 70px;
+  }
+  .textarea{
+      margin-top: 10px;
+  }
+ 
+
+  /* icon*/
+  .icons{
+    padding-top: 32px;
+  }
+body > footer > ul.list-unstyled.list-inline.text-center.py-2 > li:nth-child(2) > a{
+  background: #008f85;
+  font-weight: 600;
+  padding: 0.4rem 1.4rem;
+  border-radius: 30px;
+  border: none;
+  color: #fd0d87;
+}
+ul > li > a{
+    color: #fd0d87;
+}
+
+  
