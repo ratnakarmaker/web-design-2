@@ -1,40 +1,139 @@
+.topNav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 9999;
+    width: 100%;
+    height: 3rem;
+    display: flex;
+    align-items: center;
+    background-color: transparent;
+  }
+  
+  .ham {
+    position: absolute;
+    right: 0px;
+    width: 6rem;
+    height: 2rem;
+    font-size: 20px;
+    margin-left: 0.5rem;
+    background: none;
+    color: #C60D5C;
+    border: none;
+    cursor: pointer;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+ .ham svg{
+     width: 120px;
+ } 
+  .menuX {
+    position: absolute;
+    top: 8px;
+    width: 2rem;
+    height: 2rem;
+    margin-left: 0.5rem;
+    background: none;
+    border: none;
+    cursor: pointer;
+    color: white;
+  }
+  
+  .sideNav {
+    position: fixed;
+    top: 0;
+    right: 0;
+    z-index: 101;
+    background: #0000009e;
+    width: 300px;
+    height: 81vh;
+    overflow: hidden;
+    display: none;
+    color: white;
+    /* hide the menu above the screen by default */
+        transition: transform 0.5s ease;
+  
+  }
+  
+  .showNav {
+      display: block;
+    transform: translateX(0);
+    transition: transform 0.5s ease;
+  }
+  
+  .sideNav ul {
+    width: 100%;
+    height: 100%;
+    list-style: none;
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+    padding-top: 5rem;
+  }
+  
+  .sideNav ul li a {
+    display: block;
+    color: white;
+    padding-bottom: 10px;
+    margin-top: 1rem;
+    border-bottom: 2px solid black;
+    text-decoration: none;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 1.2rem;
+  }
+  
+  .sideNav ul li a:hover, .sideNav ul li a:focus {
+    border-bottom: 2px solid white;
+  }
+  
+  .overlay {
+    position: fixed;
+    display: none;
+    z-index: 100;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.3);
+    width: 100%;
+    height: 100vh;
+  }
+  
+  .showOverlay {
+    display: block;
+  }
+  
+  section {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    font-size: xx-large;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  section:nth-child(even) {
+    background-color: rgb(245, 245, 245);
+  }
+/* header end */
 html{
     scroll-behavior: smooth;
 }
 .text-hightlight-1{
     color: #C60D5C;
 }
-.navbar{
-    padding: 1rem 8rem;
-    z-index: 1000;
+.brand{
+    position: absolute;
+    left: 0;
+    margin-left: 0.5rem;
+    cursor: pointer;
+    color: white;
+    text-decoration: none;
 }
-.navbar .navbar-brand{
-    font-size: 1.4rem;
-    font-weight: 700;
-}
-.navbar-brand img{
-    width: 150px;
-}
-#navbarSupportedContent > ul > li:nth-child(n) > a{
-    color: #fff;
-    border: 1px solid #fff;
-    margin-right: 15px;
-    font-size: 1.1rem;
-    padding: 0 0.8rem;
-}
-#navbarSupportedContent > ul > li:nth-child(n) > a:hover,
-#navbarSupportedContent > ul > li:nth-child(n) > a.active,
-#navbarSupportedContent > ul > li:nth-child(n) > a:focus,
-#navbarSupportedContent > ul > li:nth-child(n) > a:checked{
-    color: #008f85;
-}
-#navbarSupportedContent > button{
-    background: #C60D5C;
-    color: #fff;
-    font-weight: 600;
-    padding: 0.4rem 1.4rem;
-    border-radius: 30px;
-    border: none;
+.brand img{
+    width: 20%;
 }
 .mid{
     height: 100vh;
@@ -131,9 +230,13 @@ div.gallery {
 
   /* ----------footer ---------*/
   .footer-bg{
-      background-image: linear-gradient(#D70F64, #C60D5C);
+      background-image: url("images/banner2.jpg");
       overflow: hidden;
-      height: 900px;
+      min-height: 900px;
+      background-attachment: fixed;
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover;
   }
   .footer-text{
       color: white;
@@ -147,6 +250,12 @@ div.gallery {
       border-radius: 10px;
       margin-top: 25px;
       margin-right: 10px;
+  }
+  .footer-btn2{
+      background: #D70F64;
+  }
+  .footer-btn2:hover{
+      background: none;
   }
 
   /* ------footer form------- */

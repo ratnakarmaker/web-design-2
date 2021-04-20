@@ -23,43 +23,30 @@
 <body>
     <!-- navbar -->
     <header>
-        <nav class="navbar navbar-expand-lg">
-            <div class="container-fluid">
-                <a class="navbar-brand" href="#">
-                    <img src="images/foodpanda_logo.svg" alt="">
-                </a>
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
-                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
-                    aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-                <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                    <ul class="navbar-nav mx-auto">
-                        <li class="nav-item">
-                            <a class="nav-link" href="#menu">Menu</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#chinese">Chinese</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#italian">Italian</a>
-                        </li>
-                    </ul>
-                    <button class="btn" type="submit">Log In</button>
-
-                    <!-- <div class="collapse" id="navbarToggleExternalContent">
-                        <div class="bg-dark p-4">
-                          <h5 class="text-white h4">Collapsed content</h5>
-                          <span class="text-muted">Toggleable via the navbar brand.</span>
-                        </div>
-                      </div>
-                    <nav class="navbar navbar-dark bg-dark">
-                          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarToggleExternalContent" aria-controls="navbarToggleExternalContent" aria-expanded="false" aria-label="Toggle navigation">
-                            <span class="navbar-toggler-icon"></span>
-                          </button>
-                      </nav> -->
-                </div>
-            </div>
+        <nav class="topNav">
+            <a class="brand" href="#">
+                <img src="images/foodpanda_logo.svg" alt="">
+            </a>
+            <button class="ham">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+                </svg>
+                Menu
+            </button>
+        </nav>
+        <div class="overlay"></div>
+        <nav class="sideNav">
+            <button class="menuX">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" />
+                </svg>
+            </button>
+            <ul>
+                <li><a class="menuLink" href="#italian">Italian</a></li>
+                <li><a class="menuLink" href="#chines">Chines</a></li>
+                <li><a class="menuLink" href="#maxican">Maxican</a></li>
+                <li><a class="menuLink" href="#american">American</a></li>
+            </ul>
         </nav>
 
 
@@ -156,11 +143,28 @@
                         </div>
                     </div>
                     <div class="third-btn d-grid gap-2 col-6 mx-auto">
-                        <button type="button" class="btn btn-outline-danger">Danger</button>
+                        <nav aria-label="Page navigation example">
+                            <ul class="pagination justify-content-center">
+                              <li class="page-item disabled">
+                                <a class="page-link" href="#" tabindex="-1" aria-disabled="true">Previous</a>
+                              </li>
+                              <li class="page-item"><a class="page-link" href="#">1</a></li>
+                              <li class="page-item"><a class="page-link" href="#">2</a></li>
+                              <li class="page-item"><a class="page-link" href="#">3</a></li>
+                              <li class="page-item">
+                                <a class="page-link" href="#">Next</a>
+                              </li>
+                            </ul>
+                          </nav>
                     </div>
                 </div>
             </div>
         </div>
+    </div>
+
+    <!-- pagination -->
+    <div class="pagination">
+        
     </div>
 
 
@@ -195,8 +199,8 @@
                             <label class="form-label" for="textAreaExample"></label>
                         </div>
                     </div>
-                    <div class="footer-btn2 d-flex justify-content-center">
-                        <button type="button" class="footer-btn">ORDER</button>
+                    <div class="d-flex justify-content-center">
+                        <button type="button" class="footer-btn footer-btn2">ORDER</button>
                         <button type="button" class="footer-btn">ORDER</button>
                     </div>
                     <div class="icons">
@@ -251,6 +255,28 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.min.js"
         integrity="sha384-nsg8ua9HAw1y0W1btsyWgBklPnCUAFLuTMS2G72MMONqmOymq585AcH49TLBQObG"
         crossorigin="anonymous"></script>
+
+    <script>
+        const sideNav = document.querySelector(".sideNav")
+        const overlay = document.querySelector(".overlay")
+        const ham = document.querySelector(".ham")
+        const menuX = document.querySelector(".menuX")
+        const menuItems = document.querySelectorAll(".menuLink")
+
+        menuItems.forEach(menuItem => {
+            menuItem.addEventListener("click", toggleHamburger)
+        })
+
+        ham.addEventListener("click", toggleHamburger)
+        menuX.addEventListener("click", toggleHamburger)
+        overlay.addEventListener("click", toggleHamburger)
+
+        function toggleHamburger() {
+            overlay.classList.toggle("showOverlay")
+            sideNav.classList.toggle("showNav")
+        }
+
+    </script>
 </body>
 
 </html>
